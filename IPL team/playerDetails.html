@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL</title>
+    <link rel="icon" href="img/logoi.png" type="image/png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cf845565b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- - - - - - - - - - - MAIN NAV - - - - - - - - - - -->
+
+    <nav class="navbar">
+      <div class="left-container">
+        <div class="logo">
+          <img src="./img/logo.webp" alt="logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house-user"></i> Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <a href="add-team.html"
+          ><button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            <i class="fa-solid fa-plus"></i>Add Team
+          </button></a
+        >
+        <a href="add-player.html"
+          ><button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            <i class="fa-solid fa-plus"></i> Add Player
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <!--------- PLAYER DETAILS SECTION STARTS HERE --------->
+
+    <main class="PlayerDetailsPage">
+      <center><h1>Player Details :</h1></center>
+      <div class="player-Details" id="player-details-con">
+        <!-- PLAYER DETAILS HERE -->
+      </div>
+    </main>
+
+    <!--------- PLAYER DETAILS ENDS HERE --------->
+
+    <footer>
+      <p class="footer">
+        <span>  Made by &copy; jainendra singh </span>
+    </p>
+    <ul class="footer-icon">
+      <li class="fa fa-facebook fa-2x footer-social-icon-color"></li>
+      <li class="fa fa-twitter fa-2x footer-social-icon-color"></li>
+      <li class="fa fa-instagram fa-2x footer-social-icon-color"></li>
+  </ul>
+      </p>
+    </footer>
+
+    <script src="playerDetails.js"></script>
+  </body>
+</html>
